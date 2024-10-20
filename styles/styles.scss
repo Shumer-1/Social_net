@@ -1,0 +1,47 @@
+$primary-color: #71a4dc;
+$secondary-color: #6c757d;
+$text-color-white: #ffffff;
+$first-color-gradient: #0e1010;
+$second-color-gradient: #123c30;
+
+@mixin button-styles($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  @include button-styles($primary-color, white);
+}
+
+table {
+  border: 5px solid $secondary-color;
+  thead {
+    background-color: $primary-color;
+    color:$text-color-white;
+}
+  th, td {
+    background-color: $primary-color;
+    border: 1px solid $secondary-color;
+    color:$text-color-white;
+    padding: 8px;
+    text-align: left;
+  }
+}
+
+.container-table {
+  max-height: 700px;  // Максимальная высота контейнера
+  overflow-y: auto;   // Вертикальная прокрутка
+  margin-top: 20px; // Отступ сверху (по желанию)
+}
+
+.full-page-background {
+  background: linear-gradient(to right, $first-color-gradient, $second-color-gradient);
+}
+
+.add-user-button {
+  display: inline-block;
+  margin: 20px;
+  @include button-styles($primary-color, white);
+}

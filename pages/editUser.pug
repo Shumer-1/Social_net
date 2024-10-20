@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Редактировать пользователя
+        link(rel="icon", href="/favicon.ico")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+        link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet")
+        link(rel="stylesheet" href="/css/styles.css")
+    body(class="full-page-background")
+        .container
+            h1(style="color:white") Редактировать пользователя
+            form(action=`/api/editUser/${user.id}` method="POST" enctype="multipart/form-data" class="bg-light p-4 rounded")
+                .form-group
+                    span(style="font-size:20px")#name #{user.name}
+                    img(src=user.photo, style="max-width: 100px; height: auto; margin: 10px")
+                .form-group
+                    label(for="role") Роль
+                    select#role.form-control(name="role" required)
+                        option(value="пользователь" selected=user.role === 'пользователь') Пользователь
+                        option(value="пдминистратор" selected=user.role === 'администратор') Администратор
+                .form-group
+                    label(for="status") Статус
+                    select#status.form-control(name="status" required)
+                        option(value="активный" selected=user.status === 'активный') Активен
+                        option(value="неактивный" selected=user.status === 'неактивый') Неактивен
+                        option(value="неподтвержденный" selected=user.status === 'неактивый') Неподтвержденный
+                        option(value="заблокированный" selected=user.status === 'заблокированный') Заблокировать
+                button.btn.btn-primary.btn-block(type="submit") Сохранить изменения
+            a(href="/" class="btn btn-secondary mt-3") Назад к списку пользователей

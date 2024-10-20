@@ -1,0 +1,21 @@
+// friendsNews.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{title}
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    body
+        .container
+            h1 Новости #{user.name}
+            if news.length > 0
+                ul.list-group
+                    each item in news
+                        li.list-group-item
+                            p= item.new
+                            small.text-muted Автор: #{users.find(u => u.id === item.author_id).name}
+                            small(style="margin:10px;float: right;").text-muted Дата: #{item.date}
+            else
+                p У этого пользователя и его друзей пока нет новостей.
+            a(href="/" class="btn btn-secondary mt-3") Назад

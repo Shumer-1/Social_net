@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{title}
+        link(rel="icon", href="/favicon.ico")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+        link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet")
+        link(rel="stylesheet" href="/css/styles.css")
+    body(class="full-page-background")
+        .container
+            h1(style="color:white") Список друзей
+            table.table
+                thead
+                    tr
+                        th ФИО
+                        th Дата рождения
+                        th Email
+                        th Роль
+                        th Статус
+                        th Фото
+                tbody
+                    each friend in friends
+                        tr
+                            td #{friend.name}
+                            td #{friend.dob}
+                            td #{friend.email}
+                            td #{friend.role}
+                            td #{friend.status}
+                            td
+                                img(src=friend.photo, style="max-width: 100px; height: auto;")
+
+
+            a(href="/" class="btn btn-secondary mt-3") Назад к списку пользователей

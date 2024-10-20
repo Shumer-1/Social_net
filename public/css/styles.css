@@ -1,0 +1,40 @@
+button {
+  background-color: #71a4dc;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+table {
+  border: 5px solid #6c757d;
+}
+table thead {
+  background-color: #71a4dc;
+  color: #ffffff;
+}
+table th, table td {
+  background-color: #71a4dc;
+  border: 1px solid #6c757d;
+  color: #ffffff;
+  padding: 8px;
+  text-align: left;
+}
+
+.container-table {
+  max-height: 700px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.full-page-background {
+  background: linear-gradient(to right, #0e1010, #123c30);
+}
+
+.add-user-button {
+  display: inline-block;
+  margin: 20px;
+  background-color: #71a4dc;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}

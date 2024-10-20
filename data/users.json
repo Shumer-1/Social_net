@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Иванов Иван Иванович",
+    "dob": "1990-01-01",
+    "email": "ivanov@example.com",
+    "role": "пользователь",
+    "status": "неподтвержденный",
+    "photo": "/images/1729436646389-65794647.webp",
+    "friends": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Петрова Мария Сергеевна",
+    "dob": "1992-03-15",
+    "email": "petrova@example.com",
+    "role": "пользователь",
+    "status": "не подтверждённый",
+    "photo": "/images/default.jpg",
+    "friends": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Сидоров Алексей Николаевич",
+    "dob": "1985-07-23",
+    "email": "sidorov@example.com",
+    "role": "пользователь",
+    "status": "активный",
+    "photo": "/images/default.jpg",
+    "friends": [
+      1,
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Кузнецова Ольга Васильевна",
+    "dob": "1995-11-30",
+    "email": "kuznetsova@example.com",
+    "role": "пользователь",
+    "status": "заблокированный",
+    "photo": "/images/default.jpg",
+    "friends": [
+      3,
+      5
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Смирнов Андрей Владимирович",
+    "dob": "1988-05-12",
+    "email": "smirnov@example.com",
+    "role": "Пользователь",
+    "status": "заблокированный",
+    "photo": "/images/default.jpg",
+    "friends": [
+      4
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Лебедева Наталья Александровна",
+    "dob": "1993-09-18",
+    "email": "lebedjeva@example.com",
+    "role": "администратор",
+    "status": "активный",
+    "photo": "/images/default.jpg",
+    "friends": [
+      3
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Лебедева Наталья Александровна",
+    "dob": "1993-09-18",
+    "email": "lebedjeva@example.com",
+    "role": "Пользователь",
+    "status": "активный",
+    "photo": "/images/default.jpg",
+    "friends": []
+  }
+]

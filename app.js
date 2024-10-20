@@ -24,7 +24,8 @@ app.use('/api', userRoutes);
 
 // Обработка статических файлов
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'js')));
+//app.use(express.static(path.join(__dirname, 'js')));
+app.use('/dist', express.static(path.join(__dirname, 'dist')));
 
 // Маршрут для отображения страницы пользователей
 app.get('/', (req, res) => {

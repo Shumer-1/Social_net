@@ -5,22 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c365748c-1cc9-4c01-a339-da811a224adb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/news.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/users.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulpfile.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/addUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/friends.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/news.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/userList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/editUser.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/friends.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/friendsNews.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/newUser.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/userList.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bundle.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/newUser.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pages/newUser.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/userList.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pages/userList.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +44,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Node.js.app.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/vladislav/WebstormProjects/library",
@@ -67,6 +64,16 @@
       <recent name="$PROJECT_DIR$/data/images" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.app.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729422490703</updated>
-      <workItem from="1729422491777" duration="21471000" />
+      <workItem from="1729422491777" duration="25065000" />
     </task>
     <servers />
   </component>
@@ -93,8 +100,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/webpack.config.js</url>
-          <line>18</line>
+          <url>file://$PROJECT_DIR$/webpack.config.cjs</url>
+          <line>19</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>

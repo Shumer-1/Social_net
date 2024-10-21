@@ -1,11 +1,11 @@
-// webpack.config.cjs
-const path = require('path');
+// webpack.config.js
+import path from 'path';
 
-module.exports = {
+export default {
     entry: './js/main.js',  // Точка входа для клиентских скриптов
     output: {
         filename: 'bundle.js',  // Имя выходного файла
-        path: path.resolve(__dirname, 'dist'), // Папка, куда будет помещён выходной файл
+        path: path.resolve(process.cwd(), 'dist'), // Папка, куда будет помещён выходной файл
     },
     module: {
         rules: [

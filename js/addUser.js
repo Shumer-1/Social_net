@@ -1,17 +1,16 @@
 function saveUser(event) {
-    event.preventDefault(); // Предотвратить обычное поведение формы
+    event.preventDefault();
 
     const formData = new FormData(document.querySelector('form')); // Получить данные формы
 
     $.ajax({
-        url: '/api/addUser', // Путь к вашему API для добавления пользователя
+        url: '/api/addUser',
         method: 'POST',
         data: formData,
-        contentType: false, // Не устанавливать заголовок contentType
-        processData: false, // Не обрабатывать данные
+        contentType: false,
+        processData: false,
         success: function(response) {
-            // Успешный ответ
-            window.location.href = '/'; // Перенаправление на главную страницу после успешного добавления
+            window.location.href = '/';
         },
         error: function(err) {
             console.error('Ошибка при сохранении пользователя:', err);
@@ -19,5 +18,4 @@ function saveUser(event) {
     });
 }
 
-// Привязка события к кнопке отправки формы
 $(document).on('submit', 'form', saveUser);

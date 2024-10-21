@@ -18,7 +18,7 @@
     "dob": "1992-03-15",
     "email": "petrova@example.com",
     "role": "пользователь",
-    "status": "не подтверждённый",
+    "status": "неподтверждённый",
     "photo": "/images/default.jpg",
     "friends": [
       1,

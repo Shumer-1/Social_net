@@ -1,7 +1,6 @@
-// Функция для загрузки пользователей из JSON-файла
 function loadUsers() {
     $.ajax({
-        url: '/api/users', // Путь к вашему API для получения списка пользователей
+        url: '/api/users',
         method: 'GET',
         success: function(data) {
             renderUsers(data);
@@ -12,10 +11,9 @@ function loadUsers() {
     });
 }
 
-// Функция для рендеринга списка пользователей
 function renderUsers(users) {
-    const userList = $('#user-list'); // Элемент, куда будем вставлять пользователей
-    userList.empty(); // Очищаем список перед добавлением новых пользователей
+    const userList = $('#user-list');
+    userList.empty();
 
     users.forEach(user => {
         const userItem = $(`
@@ -47,35 +45,31 @@ function editUser(userId) {
 
 
 function seeFriends(userId) {
-    window.location.href = `/api/friends/${userId}`; // Изменение здесь
+    window.location.href = `/api/friends/${userId}`;
 }
 
 function seeFriendsNews(userId) {
-    window.location.href = `/api/friendsNews/${userId}`; // Изменение здесь
+    window.location.href = `/api/friendsNews/${userId}`;
 }
 
 
-// Обработчик событий для кнопок друзей
 $(document).on('click', '.see-friends-button', function() {
     console.log("MMMMMMMM");
     const userId = $(this).data('id');
     seeFriends(userId);
 });
 
-// Обработчик событий для кнопок друзей
 $(document).on('click', '.friends-news', function() {
     const userId = $(this).data('id');
     seeFriendsNews(userId);
 });
 
 
-// Обработчик событий для кнопок редактирования
 $(document).on('click', '.edit-user', function() {
     const userId = $(this).data('id');
     editUser(userId);
 });
 
-// Инициализация приложения при загрузке страницы
 $(document).ready(function() {
-    loadUsers(); // Загружаем пользователей при загрузке страницы
+    loadUsers();
 });

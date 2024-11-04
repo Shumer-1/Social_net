@@ -126,6 +126,69 @@ router.get('/friendsNews/:id', (req, res) => {
 
 
 
+async function readJsonFile(filePath) {
+    try {
+        const data = await fs.readFile(filePath, 'utf8');
+        return JSON.parse(data);
+    } catch (error) {
+        throw new Error(`Ошибка при чтении файла ${filePath}: ${error.message}`);
+    }
+}
+
+// API для получения данных пользователей
+router.get('/api/users', async (req, res) => {
+    try {
+        const users = await readJsonFile(usersFile);
+        res.json(users);
+    } catch (error) {
+        res.status(500).json({ error: 'Ошибка при чтении файла users.json' });
+    }
+});
+
+// API для получения данных публикаций
+router.get('/api/news', async (req, res) => {
+    try {
+        const posts = await readJsonFile(newsFile);
+        res.json(posts);
+    } catch (error) {
+        res.status(500).json({ error: 'Ошибка при чтении файла news.json' });
+    }
+});
+
+
+router.get('api/users/:id', async (req, res) => {
+    try {
+        const users = await readJsonFile(usersFile);
+        const userId = req.params.id;
+        const user = users.file((u) => u.id === userId);
+
+        if (user) {
+            res.json(user);
+        }
+        else{
+            res.status(404).json({ error: `Пользователь с id ${userId} не найден` });
+        }
+    }
+    catch (error) {
+        res.status(500).json({ error: 'Ошибка при чтении файла users.json' });
+    }
+});
+
+// API для получения данных публикации по id
+router.get('/api/news/:id', async (req, res) => {
+    try {
+        const news = await readJsonFile(newsFile); // Читаем все новости из файла
+        const newsId = req.params.id; // Получаем id из параметров URL
+        const post = news.find(post => post.id === newsId); // Ищем новость с указанным id
+        if (post) {
+            res.json(post); // Отправляем найденную новость
+        } else {
+            res.status(404).json({ error: `Новость с id ${newsId} не найдена` }); // Новость не найдена
+        }
+    } catch (error) {
+        res.status(500).json({ error: 'Ошибка при чтении файла news.json' });
+    }
+});
 
 export default router;
 

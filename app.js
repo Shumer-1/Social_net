@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import express from 'express';
 import userRoutes from './routes/routes.js';
+import cors from 'cors';
 
 const app = express();
 const __dirname = path.resolve();
@@ -11,6 +12,12 @@ const __dirname = path.resolve();
 app.use(express.json());
 const usersFile = path.join(__dirname, '/data/users.json');
 
+app.use(cors({
+    origin: 'http://localhost:4200', // URL вашего Angular приложения
+    methods: 'GET,POST,PUT,DELETE,OPTIONS', // Разрешенные методы
+    allowedHeaders: 'Content-Type,Authorization,Access-Control-Allow-Origin,Access-Control-Allow-Headers,Access-Control-Allow-Methods', // Разрешенные заголовки
+    credentials: true // Если нужны куки
+}));
 
 const privateKey = fs.readFileSync(path.join(__dirname, './httpsCert/key.pem'), 'utf8');
 const certificate = fs.readFileSync(path.join(__dirname, './httpsCert/cert.pem'), 'utf8');
@@ -23,6 +30,7 @@ app.use('/api', userRoutes);
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/dist', express.static(path.join(__dirname, 'dist')));
+
 
 app.get('/', (req, res) => {
     res.render('userList', { title: 'Список пользователей' });

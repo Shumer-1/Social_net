@@ -40,7 +40,6 @@ function renderUsers(users) {
 
 function editUser(userId) {
     window.location.href = `/editUser/${userId}`;
-    console.log("MMMMMMMM");
 }
 
 
@@ -54,7 +53,6 @@ function seeFriendsNews(userId) {
 
 
 $(document).on('click', '.see-friends-button', function() {
-    console.log("MMMMMMMM");
     const userId = $(this).data('id');
     seeFriends(userId);
 });

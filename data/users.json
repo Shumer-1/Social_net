@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Иванов Иван Иванович",
+    "password": "1",
     "dob": "1990-01-01",
     "email": "ivanov@example.com",
     "role": "пользователь",
@@ -15,6 +16,7 @@
   {
     "id": 2,
     "name": "Петрова Мария Сергеевна",
+    "password": "1",
     "dob": "1992-03-15",
     "email": "petrova@example.com",
     "role": "пользователь",
@@ -28,6 +30,7 @@
   {
     "id": 3,
     "name": "Сидоров Алексей Николаевич",
+    "password": "1",
     "dob": "1985-07-23",
     "email": "sidorov@example.com",
     "role": "пользователь",
@@ -43,6 +46,7 @@
   {
     "id": 4,
     "name": "Кузнецова Ольга Васильевна",
+    "password": "1",
     "dob": "1995-11-30",
     "email": "kuznetsova@example.com",
     "role": "пользователь",
@@ -56,9 +60,10 @@
   {
     "id": 5,
     "name": "Смирнов Андрей Владимирович",
+    "password": "1",
     "dob": "1988-05-12",
     "email": "smirnov@example.com",
-    "role": "Пользователь",
+    "role": "пользователь",
     "status": "заблокированный",
     "photo": "/images/default.jpg",
     "friends": [
@@ -68,6 +73,7 @@
   {
     "id": 6,
     "name": "Лебедева Наталья Александровна",
+    "password": "1",
     "dob": "1993-09-18",
     "email": "lebedjeva@example.com",
     "role": "администратор",
@@ -80,11 +86,34 @@
   {
     "id": 7,
     "name": "Лебедева Наталья Александровна",
+    "password": "1",
     "dob": "1993-09-18",
     "email": "lebedjeva@example.com",
     "role": "Пользователь",
     "status": "активный",
     "photo": "/images/default.jpg",
+    "friends": []
+  },
+  {
+    "id": 8,
+    "name": "bgrfhf",
+    "password": "1",
+    "dob": "2222-09-08",
+    "email": "vffbfte@mail.com",
+    "role": "пользователь",
+    "status": "активный",
+    "photo": "/images/1729518708577-156483698.png",
+    "friends": []
+  },
+  {
+    "id": 9,
+    "name": "1",
+    "password": "1",
+    "dob": "2001-11-11",
+    "email": "1@mail.ru",
+    "role": "пдминистратор",
+    "status": "неактивный",
+    "photo": "/images/1729520754322-385977873.png",
     "friends": []
   }
 ]

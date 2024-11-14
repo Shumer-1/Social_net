@@ -1,7 +1,7 @@
 $(document).ready(function() {
     function loadNews() {
         $.ajax({
-            url: '/api/news',
+            url: '/inner/news',
             method: 'GET',
             success: function(news) {
                 const newsList = news.map(newsItem => `

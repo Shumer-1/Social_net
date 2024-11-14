@@ -12,10 +12,13 @@ html(lang="en")
         .container
             h1(style="color:white")= title
             .container-form
-                form(action="/api/addUser" method="POST" enctype="multipart/form-data" class="bg-light p-4 rounded")
+                form(action="inner/addUser" method="POST" enctype="multipart/form-data" class="bg-light p-4 rounded")
                     .form-group
                         label(for="name") ФИО
                         input#name.form-control(type="text" name="name" placeholder="Введите ФИО" required)
+                    .form-group
+                        label(for="password") Пароль
+                        input#password.form-control(type="text" name="password" placeholder="Введите пароль" required)
                     .form-group
                         label(for="dob") Дата рождения
                         input#dob.form-control(type="date" name="dob" required)
@@ -39,4 +42,4 @@ html(lang="en")
             a(href="/" class="btn btn-secondary mt-3") Назад к списку пользователей
         script(src="https://code.jquery.com/jquery-3.5.1.min.js")
         script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
-        script(src="/dist/bundle.js")
+        script(src="/addUser.js")

@@ -1,6 +1,6 @@
 function loadUsers() {
     $.ajax({
-        url: '/api/users',
+        url: 'inner/users',
         method: 'GET',
         success: function(data) {
             renderUsers(data);
@@ -39,16 +39,16 @@ function renderUsers(users) {
 
 
 function editUser(userId) {
-    window.location.href = `/editUser/${userId}`;
+    window.location.href = `/inner/editUser/${userId}`;
 }
 
 
 function seeFriends(userId) {
-    window.location.href = `/api/friends/${userId}`;
+    window.location.href = `/inner/friends/${userId}`;
 }
 
 function seeFriendsNews(userId) {
-    window.location.href = `/api/friendsNews/${userId}`;
+    window.location.href = `/inner/friendsNews/${userId}`;
 }
 
 

@@ -1,16 +1,17 @@
 [
   {
     "id": 1,
-    "name": "Иванов Иван Иванович",
     "password": "1",
+    "name": "Иванов Иван Иванович",
     "dob": "1990-01-01",
     "email": "ivanov@example.com",
     "role": "пользователь",
-    "status": "неподтвержденный",
+    "status": "активный",
     "photo": "/images/1729436646389-65794647.webp",
     "friends": [
       2,
-      3
+      3,
+      13
     ]
   },
   {
@@ -107,13 +108,94 @@
   },
   {
     "id": 9,
-    "name": "1",
+    "name": "JOTARO",
     "password": "1",
     "dob": "2001-11-11",
-    "email": "1@mail.ru",
-    "role": "пдминистратор",
+    "email": "jojo@jojo",
+    "role": "администратор",
     "status": "неактивный",
-    "photo": "/images/1729520754322-385977873.png",
+    "photo": "/images/1731252378888-124430530.webp",
+    "friends": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 10,
+    "name": "МАКСОС",
+    "dob": "2004-10-26",
+    "email": "maksoso@gmail.com",
+    "password": "55555",
+    "role": "пользователь",
+    "status": "активный",
+    "photo": "/images/1730900105257-603530966.jpg",
     "friends": []
+  },
+  {
+    "id": 11,
+    "name": "ВЛАДИСЛАВ",
+    "password": "1",
+    "dob": "2004-08-19",
+    "email": "saskaj@alsjkdal",
+    "role": "пользователь",
+    "status": "заблокированный",
+    "photo": "/images/1731230857112-250089225.webp",
+    "friends": []
+  },
+  {
+    "id": 12,
+    "name": "ВЛАДИСЛАВS",
+    "password": "1",
+    "dob": "1111-11-11",
+    "email": "1312@ANKJSDN",
+    "role": "пользователь",
+    "status": "неподтвержденный",
+    "photo": "/images/1731231911544-892698888.png",
+    "friends": []
+  },
+  {
+    "id": 13,
+    "name": "ПАВЕЛ ЕВГ",
+    "password": "pasha",
+    "dob": "1111-11-11",
+    "email": "pasha@pasha",
+    "role": "пользователь",
+    "status": "неподтвержденный",
+    "photo": "/images/1731336366750-599589760.webp",
+    "friends": []
+  },
+  {
+    "id": 14,
+    "name": "НОВЫЙ",
+    "dob": "1111-11-11",
+    "email": "!@adlkajs",
+    "role": "пользователь",
+    "status": "активный",
+    "photo": "/images/1731270015431-705717142.webp",
+    "friends": []
+  },
+  {
+    "id": 15,
+    "name": "Алексей",
+    "password": "1",
+    "dob": "1111-11-11",
+    "email": "lesha@lesha",
+    "role": "пользователь",
+    "status": "неподтвержденный",
+    "photo": "/images/1731333921192-154374922.webp",
+    "friends": []
+  },
+  {
+    "id": 16,
+    "name": "Джотаро",
+    "password": "1",
+    "dob": "2022-12-12",
+    "email": "2@2",
+    "role": "пользователь",
+    "status": "неподтвержденный",
+    "photo": "/images/1731339341853-182783453.webp",
+    "friends": [
+      1
+    ]
   }
 ]

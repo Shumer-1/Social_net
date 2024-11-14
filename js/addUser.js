@@ -4,7 +4,7 @@ function saveUser(event) {
     const formData = new FormData(document.querySelector('form')); // Получить данные формы
 
     $.ajax({
-        url: '/api/addUser',
+        url: '/inner/addUser',
         method: 'POST',
         data: formData,
         contentType: false,

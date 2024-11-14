@@ -11,7 +11,7 @@ html(lang="en")
     body(class="full-page-background")
         .container
             h1(style="color:white") Редактировать пользователя
-            form(action=`/api/editUser/${user.id}` method="POST" enctype="multipart/form-data" class="bg-light p-4 rounded")
+            form(action=`/inner/editUser/${user.id}` method="POST" enctype="multipart/form-data" class="bg-light p-4 rounded")
                 .form-group
                     span(style="font-size:20px")#name #{user.name}
                     img(src=user.photo, style="max-width: 100px; height: auto; margin: 10px")
